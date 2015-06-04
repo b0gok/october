@@ -52,6 +52,9 @@ class UserGroups extends Controller
 
         foreach (BackendAuth::listTabbedPermissions() as $tab => $permissions) {
 
+            if (!$tab){
+                $tab = 'backend::lang.user.other_permission';  
+            }
             $fieldName = 'permissions_'.snake_case($tab).'_section';
             $fieldConfig = [
                 'label' => $tab,
