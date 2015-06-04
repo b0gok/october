@@ -86,6 +86,7 @@ return [
         'password' => 'Password',
         'password_confirmation' => 'Confirm Password',
         'permissions' => 'Permissions',
+        'other_permission' => 'Other permissions',
         'account' => 'Account',
         'superuser' => 'Super User',
         'superuser_comment' => 'Grants this account unlimited access to all areas.',
